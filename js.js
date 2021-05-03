@@ -16,7 +16,7 @@ function checkStatOfNumberInPercents(array, number){
     for (let i=0;i<array.length;i++){
         if(array[i]===number) kolvo++;
     }
-    return Math.round((kolv0/array.length)*100);
+    return Math.round((kolvo/array.length)*100);
 }
 
 function howManyNumbersInArray(array, number){
@@ -30,7 +30,7 @@ function howManyNumbersInArray(array, number){
 function checkAnswers(){
 let arr=[];
 for (let i=0;i<voprosiki.length;i++){
-    arr[i]=checkResult(voprosiki[i].querySelectorAll('input=radio'));
+    arr[i]=checkResult(voprosiki[i].querySelectorAll('input'));
 }
 let noAnswers=howManyNumbersInArray(arr, null);
 let falseAnswers=howManyNumbersInArray(arr, false);
